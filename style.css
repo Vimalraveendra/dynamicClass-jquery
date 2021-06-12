@@ -11,3 +11,20 @@ h1 {
   background-color: black;
   color: #fff;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 500px;
+}
+li {
+  background-color: rgb(177, 174, 174);
+  margin: 5px 0;
+  padding-left: 10px;
+}

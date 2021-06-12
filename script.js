@@ -21,22 +21,26 @@ const userData =[
     },
 ]
 
-function addItem(lis){
-      
- userData.forEach(list=> 
 
-    $(`<li>${list.name}</li>`))
-   
+
+function addItem(item){
+  let LI =$(`<li>${item.name}</li>`)
+  return LI 
 }
 
 function addList(){
     //clearing the parent container before adding
  $('.list').html('');
     userData.forEach(item=>{
-        $('.list').append(
-            `<li>${item.name}</li>`
-        ) 
+        $('.list').append(addItem(item)) 
     })
+   
 }
 
-$(window).on('load', addList)
+
+
+addList();
+ 
+
+
+// $(window).on('load', addList)
